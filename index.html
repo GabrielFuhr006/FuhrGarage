@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
     <!-- cabeçalho -->
     <header class="header">
         <div class="logo">
@@ -220,8 +221,7 @@
         <section id="contact">
             <div class="card-contact">
                 <h3 class="contact-title">Pronto para transformar seu veículo?</h3>
-                <p class="contact-text">Agende uma avaliação presencial gratuita. Analisamos o verniz do seu carro e
-                    propomos o tratamento ideal.</p>
+                <p class="contact-text"><p class="contact-text">Agende uma avaliação presencial gratuita. Analisamos seu carro e propomos o tratamento ideal.</p>
                 <a href="https://wa.me/5551997788628?text=Olá%21%20Vi%20seu%20perfil%20e%20gostei%20do%20seu%20trabalho.%20Gostaria%20de%20agendar%20um%20horário%20para%20avaliar%20meu%20veículo.">CHAMAR NO WHATSAPP</a>
             </div>
         </section>
@@ -265,62 +265,66 @@
                 © 2024 Fuhr Garage Estética Automotiva. Todos os direitos reservados.
             </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <script src="./script.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const compareImage = document.getElementById("imgAfter");
+        const compareLine = document.getElementById("compareLine");
+        const compareContainer = document.getElementById("compareContainer");
+
+        let isDragging = false;
+        let currentPercent = 40;
+
+        function updateCompare(percent) {
+            percent = Math.max(0, Math.min(100, percent));
+            currentPercent = percent;
+
+            compareImage.style.clipPath = `inset(0 0 0 ${percent}%)`;
+            compareLine.style.left = percent + "%";
+        }
+
+        function updateByPosition(clientX) {
+            const rect = compareContainer.getBoundingClientRect();
+            const x = clientX - rect.left;
+            const percent = (x / rect.width) * 100;
+            updateCompare(percent);
+        }
+
+        compareContainer.addEventListener("mousedown", function (e) {
+            isDragging = true;
+            updateByPosition(e.clientX);
+        });
+
+        window.addEventListener("mousemove", function (e) {
+            if (!isDragging) return;
+            updateByPosition(e.clientX);
+        });
+
+        window.addEventListener("mouseup", function () {
+            isDragging = false;
+        });
+
+        compareContainer.addEventListener("touchstart", function (e) {
+            isDragging = true;
+            updateByPosition(e.touches[0].clientX);
+        });
+
+        window.addEventListener("touchmove", function (e) {
+            if (!isDragging) return;
+            updateByPosition(e.touches[0].clientX);
+        });
+
+        window.addEventListener("touchend", function () {
+            isDragging = false;
+        });
+
+        updateCompare(currentPercent);
+    });
+    </script>
 </body>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    const compareImage = document.getElementById("imgAfter");
-    const compareLine = document.getElementById("compareLine");
-    const compareContainer = document.getElementById("compareContainer");
-
-    let isDragging = false;
-    let currentPercent = 40;
-
-    function updateCompare(percent) {
-        percent = Math.max(0, Math.min(100, percent));
-        currentPercent = percent;
-
-        compareImage.style.clipPath = `inset(0 0 0 ${percent}%)`;
-        compareLine.style.left = percent + "%";
-    }
-
-    function updateByPosition(clientX) {
-        const rect = compareContainer.getBoundingClientRect();
-        const x = clientX - rect.left;
-        const percent = (x / rect.width) * 100;
-        updateCompare(percent);
-    }
-
-    compareContainer.addEventListener("mousedown", function (e) {
-        isDragging = true;
-        updateByPosition(e.clientX);
-    });
-
-    window.addEventListener("mousemove", function (e) {
-        if (!isDragging) return;
-        updateByPosition(e.clientX);
-    });
-
-    window.addEventListener("mouseup", function () {
-        isDragging = false;
-    });
-
-    compareContainer.addEventListener("touchstart", function (e) {
-        isDragging = true;
-        updateByPosition(e.touches[0].clientX);
-    });
-
-    window.addEventListener("touchmove", function (e) {
-        if (!isDragging) return;
-        updateByPosition(e.touches[0].clientX);
-    });
-
-    window.addEventListener("touchend", function () {
-        isDragging = false;
-    });
-
-    updateCompare(currentPercent);
-});
-</script>
-
 </html>
