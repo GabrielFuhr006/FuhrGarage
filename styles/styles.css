@@ -1272,7 +1272,6 @@ footer {
         line-height: 1.5;
         padding-top: 20px;
     }
-}
 
 /* CELULAR MUITO PEQUENO */
 @media (max-width: 420px) {
@@ -1312,9 +1311,18 @@ footer {
         scroll-margin-top: 90px ;
     }
 
-    .card-photo {
-        height: 210px;
+    .photos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+        width: 100%;
     }
+
+    .card-photo {
+        width: 100%;
+        height: 300px;
+    }
+}
 
  .compare-container {
         aspect-ratio: 16 / 12;
