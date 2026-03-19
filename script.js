@@ -367,6 +367,10 @@ const priceDatabase = {
 
 const GOOGLE_APP_SCRIPT_URL = window.CONFIG ? window.CONFIG.GOOGLE_APP_SCRIPT_URL : "";
 
+if (!GOOGLE_APP_SCRIPT_URL) {
+    console.error("ERRO CRÍTICO: GOOGLE_APP_SCRIPT_URL não foi encontrada! Verifique os Secrets do GitHub.");
+}
+
 let currentCalDate = new Date();
 let selectedDate = null;
 let selectedTime = null;
