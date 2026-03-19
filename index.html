@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Estética automotiva de alto padrão. Exclusividade, proteção tecnológica e brilho espelhado para o seu veículo.">
+    <meta property="og:title" content="Fuhr Garage - Estética Automotiva">
+    <meta property="og:description" content="Restauramos e protegemos o seu veículo com as técnicas mais avançadas do mercado global.">
+    <meta property="og:image" content="./assets/logo-canva.webp">
+    <meta name="theme-color" content="#030303">
+    <link rel="icon" href="./assets/logo-canva.webp" type="image/webp">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Fuhr Garage</title>
+</head>
+
+<body>
+
+    <!-- cabeçalho -->
+    <header class="header">
+        <div class="logo-header">
+            <a href="#home" class="logo-header-link">
+                <img src="./assets/logo-canva.webp" alt="Logo Fuhr Garage">
+                <div class="logo-text">
+                    <span class="fuhr">FUHR</span>
+                    <span class="garage">GARAGE</span>
+                </div>
+            </a>
+        </div>
+
+        <nav class="menu">
+            <a href="#services">SERVIÇOS</a>
+            <a href="#beforeAndAfter">ANTES & DEPOIS</a>
+            <a href="#gallery">GALERIA</a>
+            <a href="#clients">CLIENTES</a>
+            <a href="#" id="open-client-panel" style="color: var(--primary-soft);">MINHAS RESERVAS</a>
+        </nav>
+
+        <div class="header-button">
+            <a href="#contact">AGENDAR SERVIÇO</a>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <main>
+        <section id="home">
+            <div class="logo"></div>
+            <span class="home-h1">
+                ESTÉTICA AUTOMOTIVA COM ACABAMENTO DE ALTO NÍVEL</span>
+            <h1 class="home-title">
+                <span>FUHR</span>
+                <span class="home-degrade">GARAGE</span>
+            </h1>
+            <p class="home-text">
+                Exclusividade, proteção tecnológica e brilho espelhado. Restauramos e protegemos o seu veículo com as
+                técnicas mais avançadas do mercado global.
+            </p>
+            <div class="button-home">
+                <a href="#" id="open-evaluation-modal">AGENDAR AVALIAÇÃO</a>
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section id="services">
+            <div class="service">
+                <h2 class="service-text1">Nosso Portfólio</h2>
+                <h3 class="service-text2">Catálogo de Serviços</h3>
+            </div>
+            <div class="cards-services">
+                <div class="card1">
+                    <div class="service-icon"><i class="ph ph-drop"></i></div>
+                    <h4>Lavagem de Manutenção</h4>
+                    <p>Lavagem técnica realizada para manter o veículo sempre limpo e protegido, removendo sujeiras do
+                        dia a dia e preservando o brilho da pintura.</p>
+                </div>
+
+                <div class="card2">
+                    <div class="service-icon"><i class="ph ph-crown"></i></div>
+                    <h4>Lavagem Premium</h4>
+                    <p>Lavagem técnica realizada com foco em limpeza técnica, acabamento superior e proteção, renovando
+                        o visual do veículo e valorizando cada detalhe.</p>
+                </div>
+
+                <div class="card3">
+                    <div class="service-icon"><i class="ph ph-magic-wand"></i></div>
+                    <h4>Lavagem Detalhada</h4>
+                    <p>Lavagem técnica realizada com atenção minuciosa aos detalhes externos e internos, promovendo
+                        limpeza mais profunda, melhor acabamento, proteção e renovação completa do veículo.
+                    </p>
+                </div>
+
+                <div class="card4">
+                    <div class="service-icon"><i class="ph ph-eraser"></i></div>
+                    <h4>Descontaminação de Pintura</h4>
+                    <p>Processo técnico realizado para remover contaminantes impregnados na superfície, restaurando a
+                        pureza da pintura, melhorando o toque, o brilho e preparando o veículo para uma proteção mais
+                        eficiente.</p>
+                </div>
+
+                <div class="card5">
+                    <div class="service-icon"><i class="ph ph-paint-brush"></i></div>
+                    <h4>Revitalização de Plásticos</h4>
+                    <p>Processo técnico realizado para restaurar a aparência dos plásticos externos, devolvendo cor,
+                        uniformidade e acabamento, além de ajudar na proteção contra o desgaste do tempo.</p>
+                </div>
+
+                <div class="card6">
+                    <div class="service-icon"><i class="ph ph-cloud-rain"></i></div>
+                    <h4>Remoção de Chuva Ácida</h4>
+                    <p>Processo técnico realizado para eliminar marcas e resíduos causados pela chuva ácida, restaurando
+                        a transparência, o acabamento e a aparência das superfícies afetadas.</p>
+                </div>
+
+                <div class="card7">
+                    <div class="service-icon"><i class="ph ph-wind"></i></div>
+                    <h4>Higienização Interna</h4>
+                    <p>Processo técnico realizado para limpar e sanitizar o interior do veículo, removendo sujeiras,
+                        resíduos e impurezas, proporcionando mais conforto, cuidado e sensação de ambiente renovado.</p>
+                </div>
+
+                <div class="card8">
+                    <div class="service-icon"><i class="ph ph-shield-check"></i></div>
+                    <h4>Aplicação de Selante de Pintura</h4>
+                    <p>Proteção duradoura com brilho intenso e resistência contra agressões externas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Antes & Depois -->
+        <section id="beforeAndAfter">
+            <div class="beforeAndAfter">
+                <h2 class="text-beforeAndAfter1">A VERDADE NOS DETALHES</h2>
+                <h3 class="text-beforeAndAfter2">Antes & Depois</h3>
+
+                <div class="compare-container" id="compareContainer">
+                    <img src="./assets/img-before.webp" alt="Antes" class="img-before">
+                    <img src="./assets/img-after.webp" alt="Depois" class="img-after" id="imgAfter">
+
+                    <div class="compare-line" id="compareLine">
+                        <div class="compare-button">↔</div>
+                    </div>
+
+                    <span class="compare-label before-label">SEM CORREÇÃO</span>
+                    <span class="compare-label after-label">APÓS NOSSO SERVIÇO</span>
+                </div>
+
+                <p>Arraste a barra para comparar o resultado real</p>
+            </div>
+        </section>
+
+        <!-- Galeria -->
+        <section id="gallery">
+            <div class="gallery-wrapper">
+                <div class="photos">
+                    <div class="card-photo">
+                        <img src="./assets/photo-interior.webp" alt="Interior" decoding="async" loading="lazy">
+                    </div>
+                    <div class="card-photo">
+                        <img src="./assets/photo-carro-todo.webp" alt="Imagem do carro completo" decoding="async" loading="lazy">
+                    </div>
+                    <div class="card-photo">
+                        <img src="./assets/photo-parte-de-tras.webp" alt="Parte de trás" decoding="async" loading="lazy">
+                    </div>
+                    <div class="card-photo">
+                        <img src="./assets/photo-da-frente.webp" alt="Parte da frente" decoding="async" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttonGallery">
+                <a href="https://www.instagram.com/fuhrgarage_/" target="_blank">
+                    VER MAIS NO INSTAGRAM
+                </a>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section id="clients">
+            <div class="depoiments-title">
+                <h2>CONFIANÇA</h2>
+                <h3>O que dizem os clientes</h3>
+            </div>
+
+            <div class="clients-cards">
+                <div class="client-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        "O nível de detalhamento é absurdo. Entreguei minha BMW com a pintura
+                        ofuscada e recebi de volta um espelho. O polimento técnico e a
+                        vitrificação valem cada centavo."
+                    </p>
+
+                    <div class="client-info">
+                        <div class="client-avatar">RC</div>
+                        <div>
+                            <h3>Rodrigo C.</h3>
+                            <span>BMW Série 3</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        "Trabalho excepcional! Fiz a lavagem detalhada no meu Q5 e o interior ficou como novo. Os bancos de couro recuperaram o toque macio original que eu não via há anos."
+                    </p>
+
+                    <div class="client-info">
+                        <div class="client-avatar">MF</div>
+                        <div>
+                            <h3>Marcelo F.</h3>
+                            <span>Audi Q5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="client-card">
+                    <div class="stars">★★★★★</div>
+                    <p>
+                        "Profissionalismo do começo ao fim. A proteção de pintura que aplicaram na minha RAM facilitou muito a limpeza no dia a dia. A sujeira simplesmente não gruda!"
+                    </p>
+
+                    <div class="client-info">
+                        <div class="client-avatar">TS</div>
+                        <div>
+                            <h3>Thiago S.</h3>
+                            <span>RAM 1500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agendamento -->
+        <section id="contact">
+            <div class="card-contact">
+                <span class="contact-tag">AVALIAÇÃO PERSONALIZADA</span>
+                <h3 class="contact-title">Agende seu Horário</h3>
+                <p class="contact-text">
+                    Selecione a melhor data e horário para você. Sua solicitação será enviada diretamente
+                    para o nosso WhatsApp.
+                </p>
+                
+                <div class="booking-system">
+                    <div class="booking-details">
+                        <div class="booking-field">
+                            <label for="booking-name">Seu Nome</label>
+                            <input type="text" id="booking-name" placeholder="Como podemos te chamar?">
+                        </div>
+                        <div class="booking-field">
+                            <label for="booking-phone">Seu WhatsApp</label>
+                            <input type="tel" id="booking-phone" placeholder="(51) 99999-9999">
+                        </div>
+                        <div class="booking-field" style="grid-column: 1 / -1;">
+                            <label for="booking-vehicle">Categoria do Veículo</label>
+                            <select id="booking-vehicle">
+                                <option value="" disabled selected>Selecione a categoria...</option>
+                                <option value="QUADRICICLO / MOTO">Quadriciclo / Moto</option>
+                                <option value="HATCH / SEDANS">Hatch / Sedans</option>
+                                <option value="SUVS">SUVs</option>
+                                <option value="CAMINHONETE">Caminhonete</option>
+                            </select>
+                        </div>
+                        <div class="booking-field" style="grid-column: 1 / -1;">
+                            <label for="booking-service">Serviço de Interesse</label>
+                            <select id="booking-service">
+                                <option value="" disabled selected>Selecione o serviço...</option>
+                                <option value="Lavagem de Manutenção">Lavagem de Manutenção</option>
+                                <option value="Lavagem Premium">Lavagem Premium</option>
+                                <option value="Lavagem Detalhada">Lavagem Detalhada</option>
+                                <option value="Cera de Proteção - Zacs">Cera de Proteção - Zacs</option>
+                                <option value="Cera de Manutenção - Blend">Cera de Manutenção - Blend</option>
+                                <option value="Cera de Resistência - Blend">Cera de Resistência - Blend</option>
+                                <option value="Revitalizador de Plásticos Externo">Revitalizador de Plásticos Externo</option>
+                                <option value="Revitalizador de Plásticos Interno">Revitalizador de Plásticos Interno</option>
+                                <option value="Removedor de Chuva Ácida">Removedor de Chuva Ácida</option>
+                                <option value="Descontaminação de Pintura">Descontaminação de Pintura</option>
+                                <option value="Limpeza e Hidratação de Couro">Limpeza e Hidratação de Couro</option>
+                            </select>
+                            <span id="service-duration-info" class="duration-info"></span>
+                        </div>
+                    </div>
+
+                    <div class="booking-agenda">
+                        <div class="calendar-wrapper">
+                            <div class="calendar-header">
+                                <button id="prev-month" aria-label="Mês Anterior"><i class="ph ph-caret-left"></i></button>
+                                <h4 id="month-year">...</h4>
+                                <button id="next-month" aria-label="Próximo Mês"><i class="ph ph-caret-right"></i></button>
+                            </div>
+                            <div class="calendar-weekdays">
+                                <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+                            </div>
+                            <div class="calendar-days" id="calendar-days">
+                                <!-- Dias gerados via JS -->
+                            </div>
+                        </div>
+
+                        <div class="time-slots-wrapper">
+                            <h4>Horários para <span id="selected-date-display">...</span></h4>
+                            <div class="time-slots" id="time-slots">
+                                <p class="select-date-prompt">Selecione uma data no calendário para ver os horários disponíveis.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="confirm-booking-btn" class="booking-submit-btn" disabled>
+                        AGENDE SEU HORÁRIO
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Lightbox da Galeria -->
+    <div id="gallery-modal" class="gallery-modal">
+        <span class="close-modal" id="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Imagem ampliada">
+    </div>
+
+    <!-- Botão WhatsApp Flutuante -->
+    <a href="https://wa.me/5551997788628?text=Olá%21%20Vi%20seu%20perfil%20e%20gostei%20do%20seu%20trabalho.%20Gostaria%20de%20agendar%20um%20horário%20para%20avaliar%20meu%20veículo." class="whatsapp-float" target="_blank" aria-label="Falar no WhatsApp">
+        <i class="ph ph-whatsapp-logo"></i>
+    </a>
+
+    <!-- Footer -->
+    <footer id="agendar">
+        <div class="footer">
+            <div class="section1">
+                <div class="section1-text">FUHRGARAGE
+                    <p>
+                        Estética automotiva de alto padrão focada em proteção duradoura, correção de pintura e
+                        detalhamento minucioso.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section2">
+                <div class="section2-text">
+                    <h4 class="section2-title">CONTATO</h4>
+                    <ul class="section2-ul">
+                        <li>📍 Av. Exemplo Premium, 1000 - Centro</li>
+                        <li>📱 (51) 99778-8628</li>
+                        <li>✉️ contato@fuhrgarage.com.br</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section3">
+                <div class="section3-text">
+                    <h4 class="section3-title">HORÁRIO DE FUNCIONAMENTO</h4>
+                    <ul class="section3-ul">
+                        <li>Sex: 15:00 - 17:30</li>
+                        <li>Sáb: 08:30 - 12:00</li>
+                        <li>Dom: 08:30 - 12:00</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="rights">
+            © 2024 Fuhr Garage Estética Automotiva. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    
+    <!-- Client Panel Modal -->
+    <div id="client-panel-modal" class="lightbox-modal" style="background: rgba(4,6,8,0.95); z-index: 10000; align-items: flex-start; padding-top: 50px;">
+        <span class="close-lightbox" id="close-panel-modal" style="border-radius: 50%; padding: 10px; background: rgba(255,255,255,0.1); width:40px; height:40px; display:flex; justify-content:center; align-items:center; cursor:pointer;"><i class="ph ph-x"></i></span>
+        <div class="panel-container">
+            <h2 class="panel-title">Minhas Reservas</h2>
+            <p class="panel-desc">Digite apenas os números do seu WhatsApp para buscar seus agendamentos ativos na Garagem.</p>
+            
+            <div class="booking-field" style="max-width:300px; margin: 20px auto;">
+                <input type="tel" id="panel-phone" placeholder="(51) 99999-9999" style="background:#0c0e12; color:#fff; border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:12px; width:100%;">
+                <button id="search-bookings-btn" class="panel-btn">Buscar Histórico</button>
+            </div>
+            
+            <div id="bookings-list" class="bookings-list">
+                <!-- Javascript will populate this -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agendar Avaliação -->
+    <div id="evaluation-modal" class="eval-modal" role="dialog" aria-modal="true" aria-labelledby="eval-modal-title">
+        <div class="eval-modal-inner">
+            <div class="eval-modal-box">
+                <button class="eval-modal-close" id="close-evaluation-modal" aria-label="Fechar">
+                    <i class="ph ph-x"></i>
+                </button>
+
+                <span class="eval-modal-tag">AVALIAÇÃO GRATUITA</span>
+                <h2 class="eval-modal-title" id="eval-modal-title">Agende sua Avaliação</h2>
+                <p class="eval-modal-desc">Preencha os dados abaixo e entraremos em contato pelo WhatsApp para confirmar a data e horário.</p>
+
+                <div class="eval-form">
+                    <div class="eval-field">
+                        <label for="eval-name">Seu Nome</label>
+                        <input type="text" id="eval-name" placeholder="Como podemos te chamar?" autocomplete="name">
+                    </div>
+                    <div class="eval-field">
+                        <label for="eval-phone">Seu WhatsApp</label>
+                        <input type="tel" id="eval-phone" placeholder="(51) 99999-9999" autocomplete="tel">
+                    </div>
+                    <div class="eval-field eval-field--full">
+                        <label for="eval-vehicle">Categoria do Veículo</label>
+                        <select id="eval-vehicle">
+                            <option value="" disabled selected>Selecione a categoria...</option>
+                            <option value="QUADRICICLO / MOTO">Quadriciclo / Moto</option>
+                            <option value="HATCH / SEDANS">Hatch / Sedans</option>
+                            <option value="SUVS">SUVs</option>
+                            <option value="CAMINHONETE">Caminhonete</option>
+                        </select>
+                    </div>
+                    <div class="eval-field eval-field--full">
+                        <label for="eval-description">O que você gostaria de avaliar?</label>
+                        <textarea id="eval-description" rows="3" placeholder="Ex: pintura com riscos, chuva ácida, higienização completa..."></textarea>
+                    </div>
+                </div>
+
+                <button id="send-evaluation-btn" class="eval-submit-btn" disabled>
+                    <i class="ph ph-whatsapp-logo"></i>
+                    ENVIAR PARA AVALIAÇÃO
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./config.js"></script>
+    <script src="./script.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const compareImage = document.getElementById("imgAfter");
+            const compareLine = document.getElementById("compareLine");
+            const compareContainer = document.getElementById("compareContainer");
+
+            let isDragging = false;
+            let currentPercent = 40;
+
+            function updateCompare(percent) {
+                percent = Math.max(0, Math.min(100, percent));
+                currentPercent = percent;
+
+                compareImage.style.clipPath = `inset(0 0 0 ${percent}%)`;
+                compareLine.style.left = percent + "%";
+            }
+
+            function updateByPosition(clientX) {
+                const rect = compareContainer.getBoundingClientRect();
+                const x = clientX - rect.left;
+                const percent = (x / rect.width) * 100;
+                updateCompare(percent);
+            }
+
+            compareContainer.addEventListener("mousedown", function (e) {
+                isDragging = true;
+                updateByPosition(e.clientX);
+            });
+
+            window.addEventListener("mousemove", function (e) {
+                if (!isDragging) return;
+                updateByPosition(e.clientX);
+            });
+
+            window.addEventListener("mouseup", function () {
+                isDragging = false;
+            });
+
+            compareContainer.addEventListener("touchstart", function (e) {
+                isDragging = true;
+                updateByPosition(e.touches[0].clientX);
+            });
+
+            window.addEventListener("touchmove", function (e) {
+                if (!isDragging) return;
+                updateByPosition(e.touches[0].clientX);
+            });
+
+            window.addEventListener("touchend", function () {
+                isDragging = false;
+            });
+
+            updateCompare(currentPercent);
+        });
+    </script>
+</body>
+
+</html>
