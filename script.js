@@ -365,7 +365,7 @@ const priceDatabase = {
     "Limpeza e Hidratação de Couro": { "QUADRICICLO / MOTO": 45, "HATCH / SEDANS": 45, "SUVS": 45, "CAMINHONETE": 45 }
 };
 
-const GOOGLE_APP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxsE3hjKI5-QIPEzOrHItlYDOFqGmhPhVr7gDrtlMyc5Jhnz5PnFnGmDsP0Vn_MsXkUjA/exec";
+const GOOGLE_APP_SCRIPT_URL = window.CONFIG ? window.CONFIG.GOOGLE_APP_SCRIPT_URL : "";
 
 let currentCalDate = new Date();
 let selectedDate = null;
@@ -621,7 +621,8 @@ function validateForm() {
     // Reset estilo normal
     confirmBtn.style.background = "linear-gradient(180deg, #3b5cff 0%, #2443d8 100%)";
     
-    if (nameVal && phoneVal && vehicleVal && selectedDate && selectedTime) {
+    const rawPhone = phoneVal.replace(/\D/g, '');
+    if (nameVal && rawPhone.length >= 10 && vehicleVal && selectedDate && selectedTime) {
         confirmBtn.disabled = false;
         confirmBtn.innerHTML = "HORÁRIO BLOQUEADO! <i class='ph ph-check-circle'></i>";
         
@@ -886,7 +887,7 @@ function closeEvalModal() {
 function validateEvalForm() {
     if (!sendEvalBtn || !evalNameInput || !evalPhoneInput || !evalVehicleSelect) return;
     const nameOk    = evalNameInput.value.trim().length > 1;
-    const phoneOk   = evalPhoneInput.value.replace(/\D/g, '').length >= 8;
+    const phoneOk   = evalPhoneInput.value.replace(/\D/g, '').length >= 10;
     const vehicleOk = evalVehicleSelect.value !== "";
     sendEvalBtn.disabled = !(nameOk && phoneOk && vehicleOk);
 }
