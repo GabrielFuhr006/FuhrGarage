@@ -3,7 +3,15 @@
 Landing page institucional desenvolvida para a marca FuhrGarage, especializada em estética automotiva e detalhamento premium.
 
 ## 🧼 Sobre o Projeto
-Este site foi criado com o objetivo de apresentar os serviços de lavagem detalhada, descontaminação e cuidados automotivos, fortalecendo a presença digital da marca.
+Este site foi criado com o objetivo de apresentar os serviços de lavagem detalhada, descontaminação e cuidados automotivos, fortalecendo a presença digital da marca. Possui dois projetos.
+
+O repositório conta com duas versões do projeto:
+
+- **Versão 1:** desenvolvida por mim  
+  `https://gabrielfuhr006.github.io/FuhrGarage/v1`
+
+- **Versão 2:** desenvolvida com apoio de IA  
+  `https://gabrielfuhr006.github.io/FuhrGarage/`
 
 ## 🚀 Serviços Oferecidos
 - Lavagem de Manutenção
